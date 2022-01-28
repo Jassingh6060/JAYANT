@@ -1,8 +1,4 @@
-
 const devices = JSON.parse(localStorage.getItem('devices')) || [];
-
-
-
 devices.forEach(function(device) {
   $('#devices tbody').append(`
     <tr>
@@ -11,8 +7,6 @@ devices.forEach(function(device) {
     </tr>`
   );
 });
-
-
 
 $('#add-device').on('click', function() {
   const user = $('#user').val();
